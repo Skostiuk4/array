@@ -1,8 +1,9 @@
 <?php
   function mas ($numbers) {
-    foreach ($numbers as $number) {
-    echo $number;
-    }
+   $sum = 0;
+   foreach ($numbers as $number)
+     $sum += $number;
+   return $sum;
   }
-  $numbers = array(10, 15, 16, 22, 4);
-  $item = mas ($numbers);
+  $values = array(10, 15, 16, 22, 4);
+  echo mas($values);
